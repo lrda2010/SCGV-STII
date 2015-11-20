@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style type="text/css">
+.bs-example {
+	margin: 20px;
+}
+</style>
+
+<link href="bootstrap/freelancer/css/freelancer.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+<link href="bootstrap/freelancer/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+	rel="stylesheet" type="text/css">
+<link
+	href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+	rel="stylesheet" type="text/css">
+
+
+<link href="theme.css" rel="stylesheet">
+
+<title>Registro y Control de Operadores</title>
+</head>
+
+<body role="document">
+	<header>
+
+	<div class="container2">
+		<div class="row">
+			<div class="col-lg-12">
+				<a href="menu.html"><img class="img-responsive"
+					src="bootstrap/freelancer/img/profile.png" height="72px"
+					width="72px"></a>
+				<div class="intro-text">
+					<span class="name2">¡Bienvenido al Sistema de Control y
+						Gestion Vehicular!</span>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</header>
+
+
+	<div class="bs-example">
+
+		<ul class="nav nav-pills" role="tablist">
+			<li role="presentation"><a href="controlIS.html">Inicio</a></li>
+			<li role="presentation" ><a
+				href="nuevoRegistro.html"> Nuevo Registro</a></li>
+			<li role="presentation" class="active"><a href="modificarRegistro.html">Modificar Registro</a></li>
+			<li role="presentation"><a href="eliminarRegistro.html">Eliminar Registro</a></li>
+			<li role="presentation"><a href="dashboard.html">Dashboard</a></li>
+		</ul>
+
+
+		<div class="page-header">
+			<h3>
+				<b>Modificar Registro de control</b>
+			</h3>
+		</div>
+
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Nombres
+					Chofer</label>
+				<div class="col-lg-4">
+					<input type="email" class="form-control" id="ejemplo_email_3"
+						value="Test">
+				</div>
+
+
+			</div>
+
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Licencia</label>
+				<div class="col-lg-4">
+					<input class="form-control" id="licencia"
+						value="abcd-efgh">
+				</div>
+
+
+			</div>
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Nombres
+					Cobrador</label>
+				<div class="col-lg-4">
+					<input class="form-control" id="cobrador"
+						value="Test">
+				</div>
+
+
+			</div>
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Placa
+					del Vehiculo </label>
+				<div class="col-lg-4">
+					<input class="form-control" id="placa" value="ABC-DEF">
+				</div>
+
+
+			</div>
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Terminal
+				</label>
+				<div class="col-lg-4">
+					<label class="radio-inline"><input type="radio"
+						name="anita" >Santa Anita</label> <label class="radio-inline"><input
+						type="radio" name="molina" checked="checked">La Molina</label>
+				</div>
+
+
+			</div>
+
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Motivo
+				</label>
+				<div class="col-lg-4">
+					<label class="radio-inline"><input type="radio"
+						name="ingreso"  checked="checked">Ingreso</label> <label class="radio-inline"><input
+						type="radio" name="salida">Salida</label>
+				</div>
+
+			</div>
+
+		</form>
+
+
+		<div class="page-header">
+			<h4>
+				<b>Cumplimiento de normativa interna</b>
+			</h4>
+		</div>
+
+
+		<form class="form-horizontal" role="form">
+
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Posee
+					Licencia Vencida / Sin Licencia</label>
+				<div class="col-lg-4">
+					<label class="radio-inline"><input type="radio" name="1">Si</label>
+					<label class="radio-inline"><input type="radio" name="1" checked="checked">No</label>
+
+				</div>
+
+
+
+			</div>
+
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Puntualidad
+				</label>
+				<div class="col-lg-4">
+					<label class="radio-inline"><input type="radio" name="2">0</label>
+					<label class="radio-inline"><input type="radio" name="2">1</label>
+					<label class="radio-inline"><input type="radio" name="2">2</label>
+					<label class="radio-inline"><input type="radio" name="2">3</label>
+					<label class="radio-inline"><input type="radio" name="2">4</label>
+					<label class="radio-inline"><input type="radio" name="2" checked="checked">5</label>
+				</div>
+
+
+			</div>
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Presentacion
+					personal </label>
+				<div class="col-lg-4">
+					<label class="radio-inline"><input type="radio" name="3">0</label>
+					<label class="radio-inline"><input type="radio" name="3">1</label>
+					<label class="radio-inline"><input type="radio" name="3">2</label>
+					<label class="radio-inline"><input type="radio" name="3">3</label>
+					<label class="radio-inline"><input type="radio" name="3">4</label>
+					<label class="radio-inline"><input type="radio" name="3" checked="checked">5</label>
+				</div>
+
+
+			</div>
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Limpieza
+					del vehiculo </label>
+				<div class="col-lg-4">
+					<label class="radio-inline"><input type="radio" name="4">0</label>
+					<label class="radio-inline"><input type="radio" name="4">1</label>
+					<label class="radio-inline"><input type="radio" name="4">2</label>
+					<label class="radio-inline"><input type="radio" name="4">3</label>
+					<label class="radio-inline"><input type="radio" name="4">4</label>
+					<label class="radio-inline"><input type="radio" name="4" checked="checked">5</label>
+				</div>
+
+
+			</div>
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Quejas
+					por corretos </label>
+				<div class="col-lg-4">
+					<label class="radio-inline"><input type="radio" name="5">Si</label>
+					<label class="radio-inline"><input type="radio" name="5" checked="checked">No</label>
+
+				</div>
+
+
+
+			</div>
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">
+				</label>
+				<div class="col-lg-4">
+					<textarea class="form-control" rows="5" id="comment"
+						placeholder="Detalle la queja si es que existe"></textarea>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Quejas
+					por no mantener frecuencia </label>
+				<div class="col-lg-4">
+					<label class="radio-inline"><input type="radio" name="6">Si</label>
+					<label class="radio-inline"><input type="radio" name="6" checked="checked">No</label>
+
+				</div>
+
+
+
+			</div>
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">
+				</label>
+				<div class="col-lg-4">
+					<textarea class="form-control" rows="5" id="comment"
+						placeholder="Detalle la queja si es que existe"></textarea>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">Quejas
+					por cortes de ruta</label>
+				<div class="col-lg-4">
+					<label class="radio-inline"><input type="radio" name="7">Si</label>
+					<label class="radio-inline"><input type="radio" name="7" checked="checked">No</label>
+
+				</div>
+
+
+
+			</div>
+
+			<div class="form-group">
+				<label for="ejemplo_email_3" class="col-lg-2 control-label">
+				</label>
+				<div class="col-lg-4">
+					<textarea class="form-control" rows="5" id="comment"
+						placeholder="Detalle la queja si es que existe"></textarea>
+				</div>
+			</div>
+
+
+		</form>
+
+
+<p align="center"><a href="3democontrolIS.html"><button type="button" class="btn btn-primary" onclick="return confirm('Registro modificado con exito')">Guardar</button></a></p>
+
+	</div>
+
+</body>
+</html>

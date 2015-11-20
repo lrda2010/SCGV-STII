@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+.bs-example {
+	margin: 20px;
+}
+</style>
+
+<link href="bootstrap/freelancer/css/freelancer.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+<link href="bootstrap/freelancer/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+	rel="stylesheet" type="text/css">
+<link
+	href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+	rel="stylesheet" type="text/css">
+
+<link type="text/css" rel="stylesheet"
+	href="bootstrap/css/bootstrap.css" />
+
+<title>Registro y Control de Operadores</title>
+
+<style>
+#map {
+	width: 645px;
+	height: 489px;
+}
+</style>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+	function initialize() {
+
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom : 13,
+			center : new google.maps.LatLng(-12.100479, -76.994576),
+			mapTypeId : google.maps.MapTypeId.ROADMAP
+		});
+
+		var shapes = [];
+		var path = [
+				new google.maps.LatLng(-12.114396892220675, -76.93697154521942),
+				new google.maps.LatLng(-12.116111987095845, -76.93902879953384),
+				new google.maps.LatLng(-12.116064782797233, -76.9393453001976),
+				new google.maps.LatLng(-12.113961560575229, -76.94117993116379),
+				new google.maps.LatLng(-12.112860115892245, -76.94178074598312),
+				new google.maps.LatLng(-12.110641477806968, -76.94273561239243),
+				new google.maps.LatLng(-12.109450853550216, -76.9432720541954),
+				new google.maps.LatLng(-12.1084438015769, -76.94409817457199),
+				new google.maps.LatLng(-12.107767186399533, -76.94499403238297),
+				new google.maps.LatLng(-12.106770618288087, -76.9463512301445),
+				new google.maps.LatLng(-12.106503117793622, -76.94657653570175),
+				new google.maps.LatLng(-12.104966296036988, -76.94748848676682),
+				new google.maps.LatLng(-12.103508142988503, -76.94843798875809),
+				new google.maps.LatLng(-12.102632198302226, -76.94915145635605),
+				new google.maps.LatLng(-12.10137859582168, -76.94960206747055),
+				new google.maps.LatLng(-12.098116054686473, -76.95108264684677),
+				new google.maps.LatLng(-12.09551438562851, -76.95224672555923),
+				new google.maps.LatLng(-12.094255504414654, -76.95279389619827),
+				new google.maps.LatLng(-12.093316584983958, -76.95282071828842),
+				new google.maps.LatLng(-12.092666158417506, -76.95281535387039),
+				new google.maps.LatLng(-12.091087293800644, -76.9534483551979),
+				new google.maps.LatLng(-12.08885798403621, -76.95445150136948),
+				new google.maps.LatLng(-12.088480310894596, -76.9547626376152),
+				new google.maps.LatLng(-12.086387362570969, -76.95698350667953),
+				new google.maps.LatLng(-12.085868057068396, -76.95734828710556),
+				new google.maps.LatLng(-12.085175648163906, -76.9576433300972),
+				new google.maps.LatLng(-12.084121294800012, -76.95776671171188),
+				new google.maps.LatLng(-12.082636800186645, -76.95745021104813),
+				new google.maps.LatLng(-12.083140375253926, -76.95665627717972),
+				new google.maps.LatLng(-12.083292496702493, -76.95623248815536),
+				new google.maps.LatLng(-12.083051200571454, -76.95533663034439),
+				new google.maps.LatLng(-12.082862359969345, -76.95523470640182),
+				new google.maps.LatLng(-12.08182897987058, -76.95585161447525),
+				new google.maps.LatLng(-12.080271033805074, -76.9524934887886),
+				new google.maps.LatLng(-12.079457960708973, -76.95288509130478),
+				new google.maps.LatLng(-12.079179941599916, -76.95322304964066),
+				new google.maps.LatLng(-12.078886185246493, -76.95309966802597),
+				new google.maps.LatLng(-12.078408830484774, -76.95262223482132),
+				new google.maps.LatLng(-12.077034463671263, -76.95404380559921),
+				new google.maps.LatLng(-12.076714476492404, -76.95434957742691),
+				new google.maps.LatLng(-12.074374886485579, -76.95545464754105),
+				new google.maps.LatLng(-12.074086370607313, -76.9558247923851),
+				new google.maps.LatLng(-12.07345688033965, -76.95585697889328),
+				new google.maps.LatLng(-12.071652333373928, -76.95672065019608),
+				new google.maps.LatLng(-12.073892277932536, -76.96158349514008),
+				new google.maps.LatLng(-12.074584716020027, -76.96262419223785),
+				new google.maps.LatLng(-12.075686318378919, -76.96368634700775),
+				new google.maps.LatLng(-12.078204249612078, -76.96494162082672),
+				new google.maps.LatLng(-12.081204753411106, -76.96698009967804),
+				new google.maps.LatLng(-12.082883342265049, -76.96925461292267),
+				new google.maps.LatLng(-12.083240041040337, -76.96946918964386),
+				new google.maps.LatLng(-12.08374361497263, -76.96978032588959),
+				new google.maps.LatLng(-12.083544283737734, -76.9704669713974),
+				new google.maps.LatLng(-12.08450946517834, -76.9768613576889),
+				new google.maps.LatLng(-12.085002545657838, -76.98095977306366),
+				new google.maps.LatLng(-12.085149420518668, -76.98488652706146),
+				new google.maps.LatLng(-12.085296295298878, -76.98573410511017),
+				new google.maps.LatLng(-12.085967721838964, -76.98757946491241),
+				new google.maps.LatLng(-12.086481781644979, -76.99125945568085),
+				new google.maps.LatLng(-12.086911912560472, -76.99482142925262),
+				new google.maps.LatLng(-12.086754547671594, -76.99626982212067),
+				new google.maps.LatLng(-12.086911912560472, -76.99736416339874),
+				new google.maps.LatLng(-12.087467934426567, -76.99835121631622),
+				new google.maps.LatLng(-12.088212792096689, -77.00305044651031),
+				new google.maps.LatLng(-12.089041574954122, -77.00900495052338),
+				new google.maps.LatLng(-12.08934581105497, -77.01196610927582),
+				new google.maps.LatLng(-12.090300480711225, -77.01863944530487),
+				new google.maps.LatLng(-12.091685270200609, -77.0285314321518),
+				new google.maps.LatLng(-12.092466833830452, -77.03402191400528),
+				new google.maps.LatLng(-12.0934319830805, -77.03352838754654),
+				new google.maps.LatLng(-12.096479523878315, -77.03385025262833),
+				new google.maps.LatLng(-12.097192884693117, -77.03392535448074),
+				new google.maps.LatLng(-12.098866127958464, -77.0345851778984),
+				new google.maps.LatLng(-12.099930913673695, -77.03448593616486),
+				new google.maps.LatLng(-12.102448616716584, -77.03475415706635),
+				new google.maps.LatLng(-12.103151471247267, -77.03475415706635),
+				new google.maps.LatLng(-12.103571085011056, -77.03457176685333),
+				new google.maps.LatLng(-12.103854323929058, -77.03464686870575),
+				new google.maps.LatLng(-12.10426344628052, -77.03500092029572),
+				new google.maps.LatLng(-12.104620116537275, -77.0350331068039),
+				new google.maps.LatLng(-12.104662077712652, -77.03453958034515),
+				new google.maps.LatLng(-12.105564241388988, -77.03465759754181) ];
+
+
+		//Creacion de Vehiculos
+
+		var lineSymbol = {
+			path : google.maps.SymbolPath.CIRCLE,
+			scale : 5,
+			strokeColor : '#393',
+			title : '001'
+		};
+
+		var lineSymbol2 = {
+			path : google.maps.SymbolPath.CIRCLE,
+			scale : 5,
+			strokeColor : 'red',
+			title : '002'
+		};
+		var lineSymbol3 = {
+			path : google.maps.SymbolPath.CIRCLE,
+			scale : 5,
+			strokeColor : 'blue',
+			title : '003'
+		};
+
+		var polyline = new google.maps.Polyline({
+			path : path,
+			strokeColor : "#4D7DC1",
+			strokeOpacity : 1.0,
+			strokeWeight : 3,
+
+			icons  : [ {
+				icon : lineSymbol,
+				offset : '100%',
+				name: "verde"
+
+			}
+			],
+			map : map
+		});
+
+
+
+		var polyline2 = new google.maps.Polyline({
+			path : path,
+			strokeColor : "#4D7DC1",
+			strokeOpacity : 1.0,
+			strokeWeight : 3,
+
+			icons  : [ {
+
+				icon : lineSymbol2,
+				offset : '100%',
+				name: "roja"
+			}
+			],
+			map : map
+		});
+
+
+
+		var polyline3 = new google.maps.Polyline({
+			path : path,
+			strokeColor : "#4D7DC1",
+			strokeOpacity : 1.0,
+			strokeWeight : 3,
+
+			icons  : [ {
+
+
+				icon : lineSymbol3,
+				offset : '100%',
+				name: "azul"
+			}
+			],
+			map : map
+		});
+
+
+		animateCircle(polyline);
+		animateCircle2(polyline2);
+		animateCircle3(polyline3);
+
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+	<script>
+
+		function animateCircle(line) {
+			var count = 0;
+			window.setInterval(function() {
+				//Es la velocidad
+				count = (count + 0.05) % 200;
+				var icons = line.get('icons');
+				//if(icons[0].offset == 100+ '%'){
+					//var count = 0;
+				//}
+
+				icons[0].offset = 30+ (count / 2) + '%';
+
+				line.set('icons', icons);
+			}, 20);
+		}
+
+		function animateCircle2(line) {
+			var count = 0;
+			window.setInterval(function() {
+				//Es la velocidad
+				count = (count + 0.05) % 200;
+				var icons = line.get('icons');
+				icons[0].offset = 50+ (count / 2) + '%';
+				line.set('icons', icons);
+			}, 20);
+		}
+
+
+		function animateCircle3(line) {
+			var count = 0;
+			window.setInterval(function() {
+				//Es la velocidad
+				count = (count + 0.05) % 200;
+				var icons = line.get('icons');
+				icons[0].offset = 70+ (count / 2) + '%';
+				line.set('icons', icons);
+			}, 20);
+		}
+
+
+	</script>
+
+</head>
+
+<body role="document">
+
+	<header>
+
+	<div class="container2">
+		<div class="row">
+			<div class="col-lg-12">
+				<a href="menu.html"><img class="img-responsive"
+					src="bootstrap/freelancer/img/profile.png" height="72px"
+					width="72px"></a>
+				<div class="intro-text">
+					<span class="name2">¡Bienvenido al Sistema de Control y
+						Gestion Vehicular!</span>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</header>
+
+
+	<div style="width: 45.5%; float: left">
+		<div id="map"></div>
+
+	</div>
+
+	<div style="width: 54.5%; float: right">
+
+		<div></div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<i class=""></i><b> FRECUENCIAS ENTRE VEHICULOS</b>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<div class="table-responsive">
+					<table class="table table-bordered table-hover table-striped">
+
+
+
+						<tbody align="center">
+							<tr class="warning">
+								<td><b>Vehiculo</b></td>
+								<td><b>Placa</b></td>
+								<td><b>Minutos Adelante</b></td>
+								<td><b>Vehiculo Adelante</b></td>
+
+							</tr>
+							<tr>
+								<td>001</td>
+								<td>A0Z-737</td>
+								<td>3</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>002</td>
+								<td>B6C-812</td>
+								<td>4</td>
+								<td>001</td>
+							</tr>
+							<tr>
+								<td>003</td>
+								<td>A9N-266</td>
+								<td>6</td>
+								<td>002</td>
+							</tr>
+							<tr>
+								<td>004</td>
+								<td>C7K-911</td>
+								<td>11</td>
+								<td>003</td>
+							</tr>
+							<tr>
+								<td>005</td>
+								<td>A80-545</td>
+								<td>8</td>
+								<td>004</td>
+							</tr>
+							<tr>
+								<td>006</td>
+								<td>J8Y-391</td>
+								<td>7</td>
+								<td>005</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</div>
+	<script src="bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>

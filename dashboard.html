@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style type="text/css">
+.bs-example {
+	margin: 20px;
+}
+</style>
+
+<link href="bootstrap/admin/css/sb-admin.css" rel="stylesheet">
+
+<!-- Morris Charts CSS -->
+<link href="bootstrap/admin/css/plugins/morris.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="bootstrap/admin/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+
+<link href="bootstrap/freelancer/css/freelancer.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+<link href="bootstrap/freelancer/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+	rel="stylesheet" type="text/css">
+<link
+	href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+	rel="stylesheet" type="text/css">
+
+
+<link href="theme.css" rel="stylesheet">
+
+<title>Registro y Control de Operadores</title>
+</head>
+
+<body role="document">
+	<header>
+
+	<div class="container2">
+		<div class="row">
+			<div class="col-lg-12">
+				<a href="menu.html"><img class="img-responsive"
+					src="bootstrap/freelancer/img/profile.png" height="72px"
+					width="72px"></a>
+				<div class="intro-text">
+					<span class="name2">¡Bienvenido al Sistema de Control y
+						Gestion Vehicular!</span>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</header>
+
+
+	<div class="bs-example">
+
+		<ul class="nav nav-pills" role="tablist">
+			<li role="presentation"><a href="controlIS.html">Inicio</a></li>
+			<li role="presentation"><a href="nuevoRegistro.html">Nuevo
+					Registro</a></li>
+			<li role="presentation"><a href="modificarRegistro.html">Modificar
+					Registro</a></li>
+			<li role="presentation"><a href="eliminarRegistro.html">Eliminar
+					Registro</a></li>
+			<li role="presentation" class="active"><a href="dashboard.html">Dashboard</a></li>
+		</ul>
+
+
+		<div class="page-header">
+			<h3>
+				<b>Dashboard</b>
+			</h3>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-10">
+
+				<div class="alert alert-warning alert-dismissable">El
+					Dashboard se encarga de proporcionar informacion resumida de los
+					datos registrados diariamente respecto a la operacion y desempeño
+					de los operadores.</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="panel panel-red">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<i class="fa fa-long-arrow-right"></i><b> Total de faltas
+							mensuales 2015 </b>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div id="morris-line-chart"
+						style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+						<svg height="352" version="1.1" width="484"
+							xmlns="http://www.w3.org/2000/svg"
+							style="overflow: hidden; position: relative;"> <desc
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></desc> <defs
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs> <text
+							x="43.5" y="318" text-anchor="end"
+							.
+							font="10px &quot;Arial&quot;" stroke="none"
+							fill="#888888"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;"
+							font-size="12px" font-family="sans-serif" font-weight="normal">
+						<tspan dy="4"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text>
+						<path fill="none" stroke="#aaaaaa" d="M56,318H459"
+							stroke-width="0.5"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path> <text
+							x="43.5" y="244.75" text-anchor="end"
+							font="10px &quot;Arial&quot;" stroke="none" fill="#888888"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;"
+							font-size="12px" font-family="sans-serif" font-weight="normal">
+						<tspan dy="4"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">10</tspan></text>
+						<path fill="none" stroke="#aaaaaa" d="M56,244.75H459"
+							stroke-width="0.5"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path> <text
+							x="43.5" y="171.5" text-anchor="end"
+							font="10px &quot;Arial&quot;" stroke="none" fill="#888888"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;"
+							font-size="12px" font-family="sans-serif" font-weight="normal">
+						<tspan dy="4"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">20</tspan></text>
+						<path fill="none" stroke="#aaaaaa" d="M56,171.5H459"
+							stroke-width="0.5"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path> <text
+							x="43.5" y="98.25" text-anchor="end"
+							font="10px &quot;Arial&quot;" stroke="none" fill="#888888"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;"
+							font-size="12px" font-family="sans-serif" font-weight="normal">
+						<tspan dy="4"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30</tspan></text>
+						<path fill="none" stroke="#aaaaaa" d="M56,98.25H459"
+							stroke-width="0.5"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path> <text
+							x="43.5" y="25" text-anchor="end" font="10px &quot;Arial&quot;"
+							stroke="none" fill="#888888"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;"
+							font-size="12px" font-family="sans-serif" font-weight="normal">
+						<tspan dy="4"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">40</tspan></text>
+						<path fill="none" stroke="#aaaaaa" d="M56,25H459"
+							stroke-width="0.5"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path> <text
+							x="432.1333333333333" y="330.5" text-anchor="middle"
+							font="10px &quot;Arial&quot;" stroke="none" fill="#888888"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;"
+							font-size="12px" font-family="sans-serif" font-weight="normal"
+							transform="matrix(1,0,0,1,0,7)"> <tspan dy="4"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Octubre</tspan></text>
+						<text x="338.09999999999997" y="330.5" text-anchor="middle"
+							font="10px &quot;Arial&quot;" stroke="none" fill="#888888"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;"
+							font-size="12px" font-family="sans-serif" font-weight="normal"
+							transform="matrix(1,0,0,1,0,7)"> <tspan dy="4"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Septiembre</tspan></text>
+						<text x="244.06666666666666" y="330.5" text-anchor="middle"
+							font="10px &quot;Arial&quot;" stroke="none" fill="#888888"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;"
+							font-size="12px" font-family="sans-serif" font-weight="normal"
+							transform="matrix(1,0,0,1,0,7)"> <tspan dy="4"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Agosto</tspan></text>
+						<text x="150.03333333333333" y="330.5" text-anchor="middle"
+							font="10px &quot;Arial&quot;" stroke="none" fill="#888888"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;"
+							font-size="12px" font-family="sans-serif" font-weight="normal"
+							transform="matrix(1,0,0,1,0,7)"> <tspan dy="4"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Julio</tspan></text>
+						<text x="56" y="330.5" text-anchor="middle"
+							font="10px &quot;Arial&quot;" stroke="none" fill="#888888"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;"
+							font-size="12px" font-family="sans-serif" font-weight="normal"
+							transform="matrix(1,0,0,1,0,7)"> <tspan dy="4"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Junio</tspan></text>
+						<path fill="none" stroke="#0b62a4"
+							d="M56,200.507L69.43333333333334,203.2905L82.86666666666666,197.87L96.3,195.0865L109.73333333333332,201.972L123.16666666666666,192.1565L136.6,202.265L150.03333333333333,71.88000000000002L163.46666666666664,84.77200000000002L176.89999999999998,109.97L190.33333333333331,188.787L203.76666666666665,187.7615L217.2,198.0165L230.63333333333333,193.62150000000003L244.06666666666666,190.54500000000002L257.5,162.2705L270.9333333333333,143.372L284.3666666666667,138.684L297.79999999999995,123.3015L311.23333333333335,123.3015L324.66666666666663,136.4865L338.09999999999997,143.66500000000002L351.5333333333333,125.792L364.96666666666664,128.5755L378.4,130.0405L391.8333333333333,135.168L405.26666666666665,124.18050000000002L418.7,114.36500000000001L432.1333333333333,109.97L445.56666666666666,94.00150000000002L459,40.822"
+							stroke-width="3"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path> <circle
+							cx="56" cy="200.507" r="4" fill="#0b62a4" stroke="#ffffff"
+							stroke-width="1"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+
+
+						<circle cx="150.03333333333333" cy="71.88000000000002" r="4"
+							fill="#0b62a4" stroke="#ffffff" stroke-width="1"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+
+						<circle cx="244.06666666666666" cy="190.54500000000002" r="4"
+							fill="#0b62a4" stroke="#ffffff" stroke-width="1"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+
+						<circle cx="338.09999999999997" cy="143.66500000000002" r="4"
+							fill="#0b62a4" stroke="#ffffff" stroke-width="1"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+
+
+						<circle cx="459" cy="40.822" r="7" fill="#0b62a4" stroke="#ffffff"
+							stroke-width="1"
+							style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg>
+						<div class="morris-hover morris-default-style"
+							style="left: 402px; top: 50px;">
+
+							<div class="morris-hover-point" style="color: #0b62a4">
+								Acumulado de Faltas: 38</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-2">
+		
+		
+		</div>
+		
+		
+		<div class="col-lg-5">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<i class=""></i><b> Ranking de sanciones por chofer</b>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover table-striped">
+							<thead >
+								<tr >
+									<th > # Orden </th>
+									<th >Nombre Chofer</th>
+									<th># Sanciones</th>
+									<th>Estado</th>
+
+								</tr>
+							</thead>
+							<tbody align="center">
+								<tr>
+									<td>1</td>
+									<td>Luis Perez</td>
+									<td>3</td>
+									<td>Habilitado</td>
+
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Mario Gonzales</td>
+									<td>2</td>
+									<td>Inhabilitado</td>
+
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Jorge Diaz</td>
+									<td>2</td>
+									<td>Habilitado</td>
+
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Julio Meneses</td>
+									<td>2</td>
+									<td>Habilitado</td>
+
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Pedro Calderon</td>
+									<td>2</td>
+									<td>Habilitado</td>
+
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Rodrigo Escobar</td>
+									<td>2</td>
+									<td>Inhabilitado</td>
+
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>Miguel Salinas</td>
+									<td>1</td>
+									<td>Habilitado</td>
+
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>Victor Caceres</td>
+									<td>1</td>
+									<td>Habilitado</td>
+
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</div>
+			</div>
+
+
+
+		</div>
+		
+		
+	</div>
+	
+
+</body>
+</html>
