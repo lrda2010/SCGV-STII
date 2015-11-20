@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Avance Prototipo5" />
+        <module name="AvancePrototipo5" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Avance Prototipo5" target="1.5" />
+      <module name="AvancePrototipo5" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
