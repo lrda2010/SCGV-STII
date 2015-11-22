@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="AvancePrototipo5:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/AvancePrototipo5_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="AvancePrototipo5/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="javaee-facet-classes" facet="AvancePrototipo5/web/Web" />
+          <element id="module-output" name="AvancePrototipo5" />
+        </element>
+      </element>
+      <element id="artifact" artifact-name="Prototipo" />
+      <element id="artifact" artifact-name="Prototipo:war exploded" />
+    </root>
+  </artifact>
+</component>
