@@ -20,12 +20,12 @@
 }
 </style>
 
-<link href="bootstrap/freelancer/css/freelancer.css" rel="stylesheet">
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../../bootstrap/freelancer/css/freelancer.css" rel="stylesheet">
+<link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="../../../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
 
-<link href="bootstrap/freelancer/font-awesome/css/font-awesome.min.css"
+<link href="../../../bootstrap/freelancer/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
 	rel="stylesheet" type="text/css">
@@ -46,7 +46,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<a href="menu.html"><img class="img-responsive"
-					src="bootstrap/freelancer/img/profile.png" height="72px"
+					src="../../../bootstrap/freelancer/img/profile.png" height="72px"
 					width="72px"></a>
 				<div class="intro-text">
 					<span class="name2">¡Bienvenido al Sistema de Control y
@@ -66,17 +66,16 @@
 			<li role="presentation"><a href="controlIS.html">Inicio</a></li>
 			<li role="presentation"><a href="nuevoRegistro.html">Nuevo
 					Registro</a></li>
-			<li role="presentation"><a href="modificarRegistro.html">Modificar
-					Registro</a></li>
 			<li role="presentation" class="active"><a
-				href="eliminarRegistro.html">Eliminar Registro</a></li>
+				href="modificarRegistro.html">Modificar Registro</a></li>
+			<li role="presentation"><a href="eliminarRegistro.html">Eliminar Registro</a></li>
 			<li role="presentation"><a href="dashboard.html">Dashboard</a></li>
 		</ul>
 
 
 		<div class="page-header">
 			<h3>
-				<b>Remover registros</b>
+				<b>Editar Tabla de registros</b>
 			</h3>
 		</div>
 
@@ -86,9 +85,8 @@
 		<div class="col-lg-10">
 
 			<div class="alert alert-warning alert-dismissable">Para
-				eliminar, marque el registro y luego haga clic en el botón
-				"Eliminar". Tenga en cuenta que una vez eliminado el registro, no se
-				podrá deshacer la acción.</div>
+				modificar, marque el registro y luego haga clic en el botón
+				"Editar".</div>
 		</div>
 	</div>
 
@@ -145,33 +143,15 @@
 
 				</tr>
 
-				<tr>
-				<td><input type="radio" name="edit1"></td>
-					<td>Test2</td>
 
-					<td>abcd-efgh</td>
-					<td>Test2</td>
-
-					<td>ABC-DEF</td>
-
-
-					<td>04/10/2015</td>
-					<td>17:57:02</td>
-					<td>La Molina</td>
-					<td>Ingreso</td>
-
-				</tr>
 			</tbody>
 		</table>
-
-
-		<p align="center">
-			<a href="eliminarRegistro.html"><button type="button"
-					class="btn btn-danger"
-					onclick="return confirm('Registro eliminado con exito')">Eliminar</button></a>
-		</p>
-
-
+		
+		
+		<p align="center"><a href="alterarDatos.html"><button type="button" class="btn btn-primary">
+		Editar</button></a></p>
+		
+		
 	</div>
 
 </body>
